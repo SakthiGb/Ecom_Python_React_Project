@@ -1,0 +1,20 @@
+products=[
+    {
+        '_id':1,
+        'productname':'BMW',
+        'category':'vehicle',
+        'price':30000
+    },
+    {
+        '_id':2,
+        'productname':'Mac Lap',
+        'category':'electronic',
+        'price':20000
+    },
+    {
+        '_id':3,
+        'productname':'Adidas',
+        'category':'Footwear',
+        'price':4000
+    },
+]
