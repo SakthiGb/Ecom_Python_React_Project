@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { LinkContainer } from "react-router-bootstrap";
 import { Nav, Navbar } from "react-bootstrap";
 
@@ -27,7 +26,7 @@ function Header() {
               <li className="nav-item">
                 <LinkContainer to={"/"}>
                   <Nav.Link className="nav-link active">
-                    Home<i className="fa-solid fa-house"></i>
+                    Home<i className="fa-solid fa-house mx-1"></i>
                   </Nav.Link>
                 </LinkContainer>
               </li>
