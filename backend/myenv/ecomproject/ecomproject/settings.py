@@ -13,6 +13,13 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 from pathlib import Path
 from datetime import timedelta
 
+#for forcetext debug code
+#debug for forcetext
+import django
+import django.utils
+from django.utils.encoding import force_str
+django.utils.encoding.force_text=force_str
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -67,7 +74,7 @@ ROOT_URLCONF = 'ecomproject.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ["templates"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -183,3 +190,12 @@ MEDIA_ROOT='static/images'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ALLOW_ALL_ORIGINS= True
+
+# email credential for sending email
+EMAIL_HOST='smtpout.secureserver.net'
+# EMAIL_HOST='smtp.gmail.com'
+EMAIL_HOST_USER='sakthivel.pachiyappan@xebia.com'
+EMAIL_HOST_PASSWORD='Sak@vel1999'
+EMAIL_PORT=587
+EMAIL_USE_TLS=True
+EMAIL_BACKEND='django.core.mail.backends.smtp.EmailBackend'

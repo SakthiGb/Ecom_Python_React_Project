@@ -3,7 +3,8 @@ from .models import Products
 from django.contrib.auth.models import User
 from rest_framework_simplejwt.tokens import RefreshToken
 
-class  ProductSerializer(serializers.ModelSerializer):
+
+class ProductsSerializer(serializers.ModelSerializer):
     class Meta:
         model=Products
         fields='__all__'
